@@ -1,6 +1,6 @@
-import { Asset } from "../helpers/AssetHelper.js";
-import { RouteList } from "../routes/route-list.js";
-import { UserData } from "../helpers/links.js";
+import { Asset } from "../../../helpers/AssetHelper.js";
+import { RouteList } from "../../../routes/route-list.js";
+import { UserData } from "../../../helpers/links.js";
 
 export default function Footer() {
   return (
@@ -36,6 +36,7 @@ export default function Footer() {
             <li className="font-light">
               <a
                 href={UserData.linksLinkedin}
+                target="_blank"
                 className="relative underline-animation"
               >
                 LinkedIn
@@ -44,14 +45,16 @@ export default function Footer() {
             <li className="font-light">
               <a
                 href={UserData.linksDribbl}
+                target="_blank"
                 className="relative underline-animation"
               >
-                Dribbl
+                Dribbbl
               </a>
             </li>
             <li className="font-light">
               <a
                 href={UserData.linksInstagram}
+                target="_blank"
                 className="relative underline-animation"
               >
                 Instagram

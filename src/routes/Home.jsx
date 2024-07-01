@@ -1,9 +1,9 @@
-import Navbar from "../components/Navbar.jsx";
-import Banner from "../components/Banner.jsx";
-import Service from "../components/Service.jsx";
-import Experience from "../components/Experience.jsx";
-import Contact from "../components/Contact.jsx";
-import Footer from "../components/Footer.jsx";
+import Navbar from "../components/Page/Home/Navbar.jsx";
+import Banner from "../components/Page/Home/Banner.jsx";
+import Service from "../components/Page/Home/Service.jsx";
+import Experience from "../components/Page/Home/Experience.jsx";
+import Contact from "../components/Page/Home/Contact.jsx";
+import Footer from "../components/Page/Home/Footer.jsx";
 import ScrollNotification from "../components/Animation/ScrollNotification.jsx";
 
 export default function Home() {

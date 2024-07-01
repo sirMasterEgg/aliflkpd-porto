@@ -1,7 +1,7 @@
-import VantaBackground from "./Vanta/VantaBackground.jsx";
-import { Asset } from "../helpers/AssetHelper.js";
-import IconButton from "./Button/IconButton.jsx";
-import { UserData } from "../helpers/links.js";
+import VantaBackground from "../../Vanta/VantaBackground.jsx";
+import { Asset } from "../../../helpers/AssetHelper.js";
+import IconButton from "../../Button/IconButton.jsx";
+import { UserData } from "../../../helpers/links.js";
 
 export default function Banner() {
   return (
@@ -25,9 +25,9 @@ export default function Banner() {
           />
           <IconButton
             link={UserData.linksDribbl}
-            icon={Asset.dribblSolidIcon}
-            hoveredIcon={Asset.dribblIcon}
-            altText="Logo Dribbl"
+            icon={Asset.dribbblSolidIcon}
+            hoveredIcon={Asset.dribbblIcon}
+            altText="Logo Dribbbl"
           />
           <IconButton
             link={UserData.linksLinkedin}

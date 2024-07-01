@@ -1,4 +1,4 @@
-import ContactInfoCard from "./Card/ContactInfoCard.jsx";
+import ContactInfoCard from "../../Card/ContactInfoCard.jsx";
 
 export default function Contact() {
   return (

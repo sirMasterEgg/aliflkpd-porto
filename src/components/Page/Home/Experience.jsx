@@ -1,7 +1,7 @@
-import ExperienceKallaCard from "./Card/Experience/ExperienceKallaCard.jsx";
-import ExperienceUndiknasCard from "./Card/Experience/ExperienceUndiknasCard.jsx";
-import ExperienceRealAndFakeCard from "./Card/Experience/ExperienceRealAndFakeCard.jsx";
-import ExperienceCrmCard from "./Card/Experience/ExperienceCrmCard.jsx";
+import ExperienceKallaCard from "../../Card/Experience/ExperienceKallaCard.jsx";
+import ExperienceUndiknasCard from "../../Card/Experience/ExperienceUndiknasCard.jsx";
+import ExperienceRealAndFakeCard from "../../Card/Experience/ExperienceRealAndFakeCard.jsx";
+import ExperienceCrmCard from "../../Card/Experience/ExperienceCrmCard.jsx";
 
 export default function Experience() {
   return (

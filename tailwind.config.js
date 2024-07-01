@@ -13,9 +13,13 @@ export default {
         content: "#95F9F9",
         onsurface: "#E5F2F2",
         "icon-border": "#2A3547",
+        subtext: "rgba(147, 170, 170, 1)",
       },
       fontFamily: {
         sans: ['"Buenos Aires"', ...defaultTheme.fontFamily.sans],
+      },
+      listStyleType: {
+        circle: "circle",
       },
       backgroundImage: {
         "image-1": "url('/src/assets/backgrounds/image 1.svg')",
@@ -35,6 +39,7 @@ export default {
         "image-15": "url('/src/assets/backgrounds/image 15.svg')",
         "image-16": "url('/src/assets/backgrounds/image 16.svg')",
         "image-17": "url('/src/assets/backgrounds/contact-bg.svg')",
+        "image-18": "url('/src/assets/backgrounds/decoration.svg')",
       },
     },
   },

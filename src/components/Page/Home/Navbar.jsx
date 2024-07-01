@@ -1,5 +1,5 @@
-import { Asset } from "../helpers/AssetHelper.js";
-import NavbarFuturistic from "./Navbar/NavbarFuturistic.jsx";
+import { Asset } from "../../../helpers/AssetHelper.js";
+import NavbarFuturistic from "../../Navbar/NavbarFuturistic.jsx";
 
 export default function Navbar() {
   return (

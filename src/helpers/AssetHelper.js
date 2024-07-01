@@ -1,8 +1,8 @@
 import logo from "/logo.svg";
-import dribblIcon from "../assets/icons/dribbl.svg";
+import dribbblIcon from "../assets/icons/dribbl.svg";
 import instagramIcon from "../assets/icons/instagram.svg";
 import linkedinIcon from "../assets/icons/linkedin.svg";
-import dribblSolidIcon from "../assets/icons/dribbl-solid.svg";
+import dribbblSolidIcon from "../assets/icons/dribbl-solid.svg";
 import instagramSolidIcon from "../assets/icons/instagram-solid.svg";
 import linkedinSolidIcon from "../assets/icons/linkedin-solid.svg";
 import serviceMagnifier from "../assets/images/magnifier.svg";
@@ -31,13 +31,29 @@ import logoPng from "/logo.png";
 import whatsappIcon from "../assets/icons/whatsapp.svg";
 import locationIcon from "../assets/icons/location.svg";
 import mailIcon from "../assets/icons/mail.svg";
+import starsIcon from "../assets/icons/stars.svg";
+import downloadIcon from "../assets/icons/download.svg";
+import userPhoto from "../assets/images/user-photo.svg";
+import waveSign from "../assets/icons/wave.svg";
+import undiknasLogo from "../assets/images/logo-undiknas.svg";
+import googleLogo from "../assets/icons/google-logo.svg";
+import kominfoLogo from "../assets/icons/kominfo-logo.svg";
+import kallaLogo from "../assets/icons/kalla-logo.svg";
+import dicodingLogo from "../assets/icons/dicoding-logo.svg";
+import indonesiaFlag from "../assets/icons/indonesia-flag.svg";
+import ukFlag from "../assets/icons/uk-flag.svg";
+import germanFlag from "../assets/icons/german-flag.svg";
+import lakipadadaLogo from "../assets/icons/lakipadada-logo.svg";
+import saranatechLogo from "../assets/icons/saranatech-logo.svg";
+import trelloIcon from "../assets/icons/trello.svg";
+import adobeXdIcon from "../assets/icons/adobe-xd.svg";
 
 export const Asset = {
   logo,
-  dribblIcon,
+  dribbblIcon,
   instagramIcon,
   linkedinIcon,
-  dribblSolidIcon,
+  dribbblSolidIcon,
   instagramSolidIcon,
   linkedinSolidIcon,
   serviceMagnifier,
@@ -66,4 +82,20 @@ export const Asset = {
   whatsappIcon,
   locationIcon,
   mailIcon,
+  userPhoto,
+  starsIcon,
+  downloadIcon,
+  waveSign,
+  undiknasLogo,
+  googleLogo,
+  kominfoLogo,
+  kallaLogo,
+  dicodingLogo,
+  indonesiaFlag,
+  ukFlag,
+  germanFlag,
+  lakipadadaLogo,
+  saranatechLogo,
+  trelloIcon,
+  adobeXdIcon,
 };

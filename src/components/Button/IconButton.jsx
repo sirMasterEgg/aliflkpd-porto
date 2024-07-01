@@ -15,6 +15,7 @@ export default function IconButton({
   return (
     <a
       href={link}
+      target="_blank"
       onMouseOver={onEnter}
       onMouseOut={onLeave}
       className={`rounded-full border border-icon-border hover:bg-onsurface p-3 transition ${transitionDuration} ${className}`}

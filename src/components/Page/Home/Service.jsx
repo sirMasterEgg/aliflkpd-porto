@@ -1,5 +1,5 @@
-import ServiceCard from "./Card/ServiceCard.jsx";
-import { Asset } from "../helpers/AssetHelper.js";
+import ServiceCard from "../../Card/ServiceCard.jsx";
+import { Asset } from "../../../helpers/AssetHelper.js";
 
 export default function Service() {
   return (
