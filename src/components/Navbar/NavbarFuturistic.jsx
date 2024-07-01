@@ -4,7 +4,7 @@ export default function NavbarFuturistic({ imageLogo }) {
   return (
     <nav className="flex justify-center">
       <ul className="flex items-center gap-3">
-        <a href="#" className="navbar-underline">
+        <a href="#" className="navbar-underline navbar-underline-active">
           <li>Home</li>
         </a>
         <span className="relative bg-background trapezoid h-[66px] w-[160px] flex items-center justify-center">

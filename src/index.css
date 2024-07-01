@@ -138,7 +138,7 @@
         background: linear-gradient(to bottom right, theme('colors.background') 0%, theme('colors.background') 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
     }
 
-    .navbar-underline{
+    .navbar-underline {
         position: relative;
     }
 
@@ -152,5 +152,11 @@
         left: calc(50% - 15px);
         transform: translateY(9px);
         border-radius: 25px;
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+
+    .navbar-underline-active::after {
+        opacity: 1;
     }
 }
