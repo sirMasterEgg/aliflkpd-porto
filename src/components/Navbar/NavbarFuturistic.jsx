@@ -1,10 +1,20 @@
 import PropTypes from "prop-types";
+import { RouteList } from "../../routes/route-list.js";
+import { useLocation } from "react-router-dom";
 
 export default function NavbarFuturistic({ imageLogo }) {
+  const location = useLocation();
   return (
     <nav className="flex justify-center">
       <ul className="flex items-center gap-3">
-        <a href="#" className="navbar-underline navbar-underline-active">
+        <a
+          href={RouteList.home}
+          className={`navbar-underline ${
+            location.pathname === RouteList.home
+              ? "navbar-underline-active"
+              : ""
+          }`}
+        >
           <li>Home</li>
         </a>
         <span className="relative bg-background trapezoid h-[66px] w-[160px] flex items-center justify-center">
@@ -21,8 +31,15 @@ export default function NavbarFuturistic({ imageLogo }) {
             />
           </svg>
         </span>
-        <a href="#">
-          <li>About</li>
+        <a
+          href={RouteList.about}
+          className={`navbar-underline ${
+            location.pathname === RouteList.about
+              ? "navbar-underline-active"
+              : ""
+          }`}
+        >
+          <li>About Me</li>
         </a>
       </ul>
     </nav>

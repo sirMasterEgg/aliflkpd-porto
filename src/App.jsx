@@ -1,23 +1,27 @@
-import Navbar from "./components/Navbar.jsx";
-import Banner from "./components/Banner.jsx";
-import Service from "./components/Service.jsx";
-import ScrollNotification from "./components/Animation/ScrollNotification.jsx";
-import Experience from "./components/Experience.jsx";
-import Contact from "./components/Contact.jsx";
-import Footer from "./components/Footer.jsx";
+import Home from "./routes/Home.jsx";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import Error from "./routes/Error.jsx";
+import About from "./routes/About.jsx";
+import { RouteList } from "./routes/route-list.js";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route errorElement={<Error />}>
+      <Route element={<Home />} path={RouteList.home} />
+      <Route element={<About />} path={RouteList.about} />
+    </Route>
+  )
+);
 
 export default function App() {
   return (
     <>
-      <div className="bg-base-background overflow-x-hidden">
-        <Navbar />
-        <Banner />
-        <Service />
-        <Experience />
-        <Contact />
-        <Footer />
-        <ScrollNotification />
-      </div>
+      <RouterProvider router={router} />
     </>
   );
 }

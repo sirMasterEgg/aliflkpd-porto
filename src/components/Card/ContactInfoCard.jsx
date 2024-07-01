@@ -1,7 +1,7 @@
 import { Asset } from "../../helpers/AssetHelper.js";
 import useHover from "../../hooks/HoverHook.jsx";
+import { UserData } from "../../helpers/links.js";
 
-const email = "info.aliflkpd@gmail.com";
 const backgroundImage = "bg-image-17";
 const transitionDuration = "duration-500";
 const backgroundPosition = "bg-top-left";
@@ -31,7 +31,7 @@ export default function ContactInfoCard() {
                 </span>
                 <span className="text-2xl mt-5">CONTACT ME HERE</span>
                 <span className="font-semibold text-2xl">
-                  <a href={"mailto:" + email}>{email}</a>
+                  <a href={"mailto:" + UserData.email}>{UserData.email}</a>
                 </span>
               </div>
               <img

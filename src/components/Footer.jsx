@@ -1,7 +1,7 @@
 import { Asset } from "../helpers/AssetHelper.js";
+import { RouteList } from "../routes/route-list.js";
+import { UserData } from "../helpers/links.js";
 
-const email = "info.aliflkpd@gmail.com";
-const whatsapp = "62 853 4204 7485";
 export default function Footer() {
   return (
     <footer className="w-full text-onsurface bg-background">
@@ -16,12 +16,15 @@ export default function Footer() {
           <span className="font-bold">Check these out</span>
           <ul className="flex flex-col gap-4">
             <li className="font-light">
-              <a href="#" className="relative underline-animation">
+              <a href={RouteList.home} className="relative underline-animation">
                 Home
               </a>
             </li>
             <li className="font-light">
-              <a href="#" className="relative underline-animation">
+              <a
+                href={RouteList.about}
+                className="relative underline-animation"
+              >
                 About
               </a>
             </li>
@@ -31,17 +34,26 @@ export default function Footer() {
           <span className="font-bold">Social Media</span>
           <ul className="flex flex-col gap-4">
             <li className="font-light">
-              <a href="#" className="relative underline-animation">
+              <a
+                href={UserData.linksLinkedin}
+                className="relative underline-animation"
+              >
                 LinkedIn
               </a>
             </li>
             <li className="font-light">
-              <a href="#" className="relative underline-animation">
+              <a
+                href={UserData.linksDribbl}
+                className="relative underline-animation"
+              >
                 Dribbl
               </a>
             </li>
             <li className="font-light">
-              <a href="#" className="relative underline-animation">
+              <a
+                href={UserData.linksInstagram}
+                className="relative underline-animation"
+              >
                 Instagram
               </a>
             </li>
@@ -60,10 +72,10 @@ export default function Footer() {
               <span className="inline-flex gap-2">
                 <img src={Asset.mailIcon} alt="Mail icon" />
                 <a
-                  href={"mailto:" + email}
+                  href={"mailto:" + UserData.email}
                   className="relative underline-animation"
                 >
-                  {email}
+                  {UserData.email}
                 </a>
               </span>
             </li>
@@ -71,11 +83,11 @@ export default function Footer() {
               <span className="inline-flex gap-2">
                 <img src={Asset.whatsappIcon} alt="Whatsapp icon" />
                 <a
-                  href={"https://wa.me/" + whatsapp.split(" ").join("")}
+                  href={"https://wa.me/" + UserData.phone.split(" ").join("")}
                   target="_blank"
                   className="relative underline-animation"
                 >
-                  +{whatsapp}
+                  +{UserData.phone}
                 </a>
               </span>
             </li>

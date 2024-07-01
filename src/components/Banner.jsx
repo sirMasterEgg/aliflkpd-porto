@@ -1,6 +1,7 @@
 import VantaBackground from "./Vanta/VantaBackground.jsx";
 import { Asset } from "../helpers/AssetHelper.js";
 import IconButton from "./Button/IconButton.jsx";
+import { UserData } from "../helpers/links.js";
 
 export default function Banner() {
   return (
@@ -17,19 +18,19 @@ export default function Banner() {
 
         <div className="flex items-center justify-center gap-2 mt-4">
           <IconButton
-            link={"#"}
+            link={UserData.linksInstagram}
             icon={Asset.instagramSolidIcon}
             hoveredIcon={Asset.instagramIcon}
             altText="Logo Instagram"
           />
           <IconButton
-            link={"#"}
+            link={UserData.linksDribbl}
             icon={Asset.dribblSolidIcon}
             hoveredIcon={Asset.dribblIcon}
             altText="Logo Dribbl"
           />
           <IconButton
-            link={"#"}
+            link={UserData.linksLinkedin}
             icon={Asset.linkedinSolidIcon}
             hoveredIcon={Asset.linkedinIcon}
             altText="Logo LinkedIn"
