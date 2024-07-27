@@ -6,8 +6,11 @@ import ExperienceCrmCard from "../../Card/Experience/ExperienceCrmCard.jsx";
 export default function Experience() {
   return (
     <div className="px-5">
-      <h3 className="text-onsurface border border-base-color bg-background rounded-xl text-center font-bold text-xl py-4 w-full ">
-        ✦ EXPERIENCES ✦
+      <h3
+        data-aos="fade-up"
+        className="text-onsurface border border-base-color bg-background rounded-xl text-center font-bold text-xl py-4 w-full "
+      >
+        ✦ STUDY CASES ✦
       </h3>
       <div className="grid grid-cols-2 gap-5 my-5">
         <ExperienceKallaCard backgroundImage="bg-image-10" />

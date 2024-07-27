@@ -23,6 +23,10 @@ export const workingTools = [
     icon: Asset.adobeXdIcon,
   },
   {
+    name: "Illustrator",
+    icon: Asset.aiIcon,
+  },
+  {
     name: "Trello",
     icon: Asset.trelloIcon,
   },
@@ -31,8 +35,12 @@ export const workingTools = [
     icon: Asset.maze,
   },
   {
-    name: "Illustrator",
-    icon: Asset.ai,
+    name: "Excel",
+    icon: Asset.excelIcon,
+  },
+  {
+    name: "G-Form",
+    icon: Asset.googleForm,
   },
 ];
 
@@ -42,20 +50,21 @@ export const workData = [
       <>
         <img
           src={Asset.lakipadadaLogo}
-          className="w-52"
+          className="w-32"
           alt="Logo Lakipadada Digital Agency"
         />
       </>
     ),
-    title: "CEO & Founder",
-    company: "Lakipadada Digital Agency",
+    title: "Founder - Product Designer",
+    company: "Elkipidi Studio Lab",
     time: "Oct 2023 - Present",
     description: [
-      "Building & maintaining relation with communities & companies",
-      "Analyzing clients problems, needs, competitor as their first step before stating their product requirement",
-      "Project planning ; define the scope, budget, risks, objectives, timelines and deliverables",
-      "Development ; help team to identify the best available tech stack/tools for the targeted project, ensuring the team have the necessary tools and support in completing the project, and lastly is to make sure that projects are archived for future reference",
-      "Establish the project quality standard while ensuring the project meets them by reviewing the deliverables and user experience testing.",
+      "Analyzing clients problems, needs, market competitor before defining a product's objectives and goals",
+      "Analyzing clients problems, needs, market competitor as their first step before defining project objectives, and goals.",
+      "Define the scope, budget, risks, objectives, timelines and deliverables",
+      "Help my team to identify the best available tech stack/tools for the targeted project, ensuring the team have the necessary tools and support in completing the project, and lastly is to make sure that projects are archived for future reference",
+      "Designed design system for a more cohesive and efficient developing progress for the long term",
+      "Documenting every finished project as reference for another upcoming projects in the future.",
     ],
   },
   {
@@ -72,10 +81,10 @@ export const workData = [
     company: "Sarana Tech",
     time: "June 2024 - September 2024",
     description: [
-      "Prepare learning material for the course participants",
-      "Teaching & guiding participants to finish their course for UI UX Path",
-      "Help building a cleaner and usable design system",
-      "Designing several web/app designs for a client request or for a project template oriented to offer to companies",
+      "Helps analyzing problems and needs for client's companies and for Sarana Tech's Product itself",
+      "Helps designing several system management website, such as logistic tracking, point of sale, and finance system",
+      "Improved the accessibility of Sarana Tech's company profile by adjusting the old color into a whole new color design system",
+      "Prepared learning materials from beginner level to mastery to teach participants",
     ],
   },
   {
@@ -92,8 +101,8 @@ export const workData = [
     company: "Dicoding",
     time: "April 2024 - July 2024",
     description: [
-      "Helping professional to switch their career path into UI UX by guiding them to finish the course and building a decent portfolio",
-      "Facilitating and communicating with partisipants to finish their course through WhatsApp Community",
+      "Helping professionals to switch their career path into UI/UX by guiding them to finish the course and building a decent portfolio",
+      "Facilitating and communicating with participants to finish their course through WhatsApp Community",
       "Maintaining a good studying environment on live session course",
     ],
   },
@@ -107,11 +116,10 @@ export const workData = [
     company: "Kalla Group",
     time: "August 2023 - January 2024",
     description: [
-      "Conduct competitive/market analysis to identify audience segments and develop user journeys that reflect the needs and pain points of those segments.",
-      "Deliver compelling insights, stories and artefacts to help drive evidence-based product and design decisions.",
+      "Successfully increased Kalla Toyota DMS Sales User Experience by running a quantitative survey to initiate a redesign, then conducted A/B Testing and Forum Group Discussions to to compare old and new design and get a deep feedback on the new redesigned interface",
+      "Designed several projects for Kalla's sub-business unit system management which are: Design System for Kalla Toyota, Kalla Toyota Dealer Management Sales System, Kalla Toyota Used Car Sales System, QHSE Dashboard, Kalla Lines (Vessel), ETC",
       "Contributes actionable suggestions based on user needs and usability best practices.",
       "Deliver user-focused designs that highlight product and brand characteristics.",
-      "Conducted User Research using A/B testing method and Forum Group Discussions to point out users need and problem when using the sub-businesses unit applications of PT. Hadji Kalla.",
     ],
   },
   {
@@ -124,11 +132,11 @@ export const workData = [
     company: "UNDIKNAS IT Support Team",
     time: "June 2023 - August 2023",
     description: [
-      "Conducted user experience research using interview and group method to analyze the reasons of less usage of UNDIKNAS Learning Management System",
-      "Designed mock up and high fidelity prototype for UNDIKNAS Learning Management System for both students and lecturer side",
-      "Conducted concept testing to test out 2 different concept for the main page",
-      "Conducted Usability Testing to get feedbacks for the latest modified prototype from last testing",
-      "Deliver and communicate with the senior developer",
+      "Conducted pre-design survey to define users problem for the minimum usage of the current LMS Interface,",
+      "Created design system to ease up developers and next UI UX Designer for the LMS Application of UNDIKNAS,",
+      "Designed new design concept, mock-up, and prototypes,",
+      "Conducted concept testing to test out users understanding on the new design concept,",
+      "Conducted usability testing to test out the latest prototype's usability and user experience improvements.",
     ],
   },
 ];

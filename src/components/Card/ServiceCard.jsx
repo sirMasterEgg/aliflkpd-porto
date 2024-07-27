@@ -11,11 +11,13 @@ export default function ServiceCard({
   iconSize = "w-36 h-36",
   transitionDuration = "duration-500",
   backgroundPosition = "bg-center",
+  dataAos = "fade-up",
 }) {
   const { isHovered, onEnter, onLeave } = useHover();
 
   return (
     <div
+      data-aos={dataAos}
       className="w-full p-[1px] rounded-xl relative bg-gradient-to-r from-[rgba(255,255,255,0.6)]"
       onMouseOver={onEnter}
       onMouseOut={onLeave}
@@ -43,7 +45,7 @@ export default function ServiceCard({
             />
           </div>
           <h1 className="text-4xl font-bold">{title}</h1>
-          <p className="text-center text-xl">{description}</p>
+          <p className="text-justify text-xl">{description}</p>
         </div>
       </div>
     </div>
@@ -59,4 +61,5 @@ ServiceCard.propTypes = {
   iconSize: PropTypes.string,
   transitionDuration: PropTypes.string,
   backgroundPosition: PropTypes.string,
+  dataAos: PropTypes.string,
 };

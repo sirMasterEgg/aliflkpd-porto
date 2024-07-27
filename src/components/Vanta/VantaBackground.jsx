@@ -34,7 +34,11 @@ export default function VantaBackground({ children }) {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
-  return <div ref={vantaRef}>{children}</div>;
+  return (
+    <div data-aos="fade-in" ref={vantaRef}>
+      {children}
+    </div>
+  );
 }
 VantaBackground.propTypes = {
   children: PropTypes.node,

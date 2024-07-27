@@ -8,6 +8,12 @@
     .active {
         @apply bg-white rounded-full text-black
     }
+    .step-card {
+        @apply md:row-span-2 flex flex-col gap-5 p-5 max-w-[500px]
+    }
+    .text-input {
+        @apply text-input-text p-2 border border-border-input rounded-md focus:outline focus:outline-ring-input focus:-outline-offset-2 ring-1 focus:ring-2 ring-border-input focus:ring-base-color
+    }
 }
 
 @layer utilities {
@@ -212,5 +218,89 @@
         content: "-";
         text-indent: -17px;
         margin-right: 10px;
+    }
+    ul.dashed-2 {
+        list-style-type: none;
+    }
+    ul.dashed-2 > li {
+        text-indent: 0;
+    }
+    ul.dashed-2 > li:before {
+        content: "-";
+        text-indent: 0;
+        margin-right: 10px;
+    }
+    ul.dotted {
+        list-style-type: none;
+    }
+    ul.dotted > li {
+        text-indent: 13px;
+    }
+    ul.dotted > li:before {
+        content: "•";
+        text-indent: 13px;
+        margin-right: 10px;
+    }
+    ul.dotted-outside {
+        list-style-position: outside;
+    }
+    ul.dotted-outside > li {
+        padding-inline-start: 1ch;
+        list-style-type: "•";
+    }
+
+    .bg-image-10-darken{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/backgrounds/image 10.svg');
+    }
+
+    .blue-bullet::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: theme('colors.bullet');
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .inner-shadow-bottom {
+        position: relative;
+    }
+    .inner-shadow-bottom::before {
+        content: "";
+        position: absolute;
+        border-radius: 1rem;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,0.8) 1%, rgba(0,0,0,0) 20%);
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+    .inner-shadow-bottom:hover::before {
+        opacity: 1;
+    }
+
+    @keyframes inAnimation {
+        0% {
+            opacity: 0;
+            max-height: 0px;
+        }
+        100% {
+            opacity: 1;
+            max-height: 600px;
+        }
+    }
+
+    @keyframes outAnimation {
+        0% {
+            opacity: 1;
+            max-height: 600px;
+        }
+        100% {
+            opacity: 0;
+            max-height: 0px;
+        }
     }
 }

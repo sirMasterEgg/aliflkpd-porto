@@ -1,6 +1,8 @@
 import useHover from "../../../hooks/HoverHook.jsx";
 import { Asset } from "../../../helpers/AssetHelper.js";
 import PropTypes from "prop-types";
+import { RouteList } from "../../../routes/route-list.js";
+import { kallaTools } from "../../Page/Experience/KallaToyotaDmsSalesRedesign.jsx";
 
 export default function ExperienceKallaCard({
   backgroundImage,
@@ -11,6 +13,7 @@ export default function ExperienceKallaCard({
 
   return (
     <div
+      data-aos="fade-up"
       className={`col-span-2 w-full p-[1px] rounded-xl relative bg-gradient-to-r from-[rgba(255,255,255,0.6)]`}
       onMouseOver={onEnter}
       onMouseOut={onLeave}
@@ -58,16 +61,17 @@ export default function ExperienceKallaCard({
               <span className="font-bold text-xl">Tools Used</span>
               <div className="flex justify-between h-full">
                 <span className="inline-flex gap-3">
-                  <img
-                    src={Asset.googleForm}
-                    title="Google Form"
-                    alt="Icon google form"
-                  />
-                  <img src={Asset.figma} title="Figma" alt="Icon figma" />
-                  <img src={Asset.maze} title="Maze" alt="Icon maze" />
+                  {kallaTools.map((tool, index) => (
+                    <img
+                      key={index}
+                      src={tool.icon}
+                      title={tool.name}
+                      alt={`Icon ${tool.name}`}
+                    />
+                  ))}
                 </span>
                 <a
-                  href="#"
+                  href={RouteList.experience.kallaDms}
                   className="flex items-center justify-center border border-base-color rounded-full px-6 hover:bg-onsurface hover:text-background transition duration-300"
                 >
                   View More

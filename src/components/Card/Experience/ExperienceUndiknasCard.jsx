@@ -1,6 +1,8 @@
 import useHover from "../../../hooks/HoverHook.jsx";
 import { Asset } from "../../../helpers/AssetHelper.js";
 import PropTypes from "prop-types";
+import { RouteList } from "../../../routes/route-list.js";
+import { lmsTools } from "../../Page/Experience/LmsUndiknas.jsx";
 
 export default function ExperienceUndiknasCard({
   backgroundImage,
@@ -11,6 +13,7 @@ export default function ExperienceUndiknasCard({
 
   return (
     <div
+      data-aos="fade-up"
       className={`col-span-2 w-full p-[1px] rounded-xl relative bg-gradient-to-r from-[rgba(255,255,255,0.6)]`}
       onMouseOver={onEnter}
       onMouseOut={onLeave}
@@ -50,9 +53,7 @@ export default function ExperienceUndiknasCard({
             </div>
           </div>
           <div className="w-1/2 flex flex-col gap-5 py-10">
-            <h1 className="text-3xl font-bold mb-2">
-              LMS UNDIKNAS RE-DEVELOPMENT
-            </h1>
+            <h1 className="text-3xl font-bold mb-2">LMS UNDIKNAS REDESIGN</h1>
             <p className="text-xl text-justify">
               After conducting a research on why Lecturers and Students decline
               to use the LMS of UNDIKNAS, it turns out to have a bad UX which
@@ -67,15 +68,17 @@ export default function ExperienceUndiknasCard({
               <span className="font-bold text-xl">Tools Used</span>
               <div className="flex justify-between h-full">
                 <span className="inline-flex gap-3">
-                  <img src={Asset.figma} title="Figma" alt="Icon figma" />
-                  <img
-                    src={Asset.ai}
-                    title="Adobe Illustrator"
-                    alt="Icon adobe illustrator"
-                  />
+                  {lmsTools.map((tool, index) => (
+                    <img
+                      key={index}
+                      src={tool.icon}
+                      title={tool.name}
+                      alt={tool.name}
+                    />
+                  ))}
                 </span>
                 <a
-                  href="#"
+                  href={RouteList.experience.lmsUndiknas}
                   className="flex items-center justify-center border border-base-color rounded-full px-6 hover:bg-onsurface hover:text-background transition duration-300"
                 >
                   View More

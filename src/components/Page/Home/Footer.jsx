@@ -1,6 +1,21 @@
 import { Asset } from "../../../helpers/AssetHelper.js";
-import { RouteList } from "../../../routes/route-list.js";
 import { UserData } from "../../../helpers/links.js";
+import { RouteList } from "../../../routes/route-list.js";
+
+const studyCaseFooter = [
+  {
+    title: "KALLA DMS Redesign",
+    link: RouteList.experience.kallaDms,
+  },
+  {
+    title: "LMS UNDIKNAS Redesign",
+    link: RouteList.experience.lmsUndiknas,
+  },
+  {
+    title: "REALnFAKE Development",
+    link: RouteList.experience.realNFake,
+  },
+];
 
 export default function Footer() {
   return (
@@ -13,21 +28,15 @@ export default function Footer() {
           alt="Logo"
         />
         <div className="flex flex-col gap-4">
-          <span className="font-bold">Check these out</span>
+          <span className="font-bold">Study Cases</span>
           <ul className="flex flex-col gap-4">
-            <li className="font-light">
-              <a href={RouteList.home} className="relative underline-animation">
-                Home
-              </a>
-            </li>
-            <li className="font-light">
-              <a
-                href={RouteList.about}
-                className="relative underline-animation"
-              >
-                About
-              </a>
-            </li>
+            {studyCaseFooter.map((data, index) => (
+              <li className="font-light" key={data.title + "-" + index}>
+                <a href={data.link} className="underline-animation">
+                  {data.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="flex flex-col gap-4">
@@ -48,7 +57,7 @@ export default function Footer() {
                 target="_blank"
                 className="relative underline-animation"
               >
-                Dribbbl
+                Dribbble
               </a>
             </li>
             <li className="font-light">
@@ -98,7 +107,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex items-center gap-2 justify-center border-t border-t-[#3FD0FF] h-16">
-        &copy;<span className="font-light">Lakipadada Digital Agency</span>
+        <span>
+          <img
+            src={Asset.lakipadadaStudioLogo}
+            className="w-8 h-8"
+            alt="Logo Elkipidi Studio Lab"
+          />
+        </span>
+        <span className="font-light">Made by Elkipidi Studio Lab.</span>
       </div>
     </footer>
   );

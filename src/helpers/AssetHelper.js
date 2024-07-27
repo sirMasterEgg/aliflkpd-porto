@@ -1,4 +1,5 @@
 import logo from "/logo.svg";
+import logoPng from "/logo.png";
 import dribbblIcon from "../assets/icons/dribbl.svg";
 import instagramIcon from "../assets/icons/instagram.svg";
 import linkedinIcon from "../assets/icons/linkedin.svg";
@@ -27,7 +28,6 @@ import kallaLeadsOutstandingMobile from "../assets/images/382shots_so.png";
 import undiknasMockup from "../assets/images/Academy Screen 1.png";
 import arrowUndiknas from "../assets/icons/arrow.svg";
 import persona from "../assets/images/persona-1.svg";
-import logoPng from "/logo.png";
 import whatsappIcon from "../assets/icons/whatsapp.svg";
 import locationIcon from "../assets/icons/location.svg";
 import mailIcon from "../assets/icons/mail.svg";
@@ -47,6 +47,27 @@ import lakipadadaLogo from "../assets/icons/lakipadada-logo.svg";
 import saranatechLogo from "../assets/icons/saranatech-logo.svg";
 import trelloIcon from "../assets/icons/trello.svg";
 import adobeXdIcon from "../assets/icons/adobe-xd.svg";
+import excelIcon from "../assets/icons/excel.svg";
+import aiIcon from "../assets/icons/ai-v2.svg";
+import calculator from "../assets/images/calculator.svg";
+import calendar from "../assets/images/calendar.svg";
+import dart from "../assets/images/dart.svg";
+import fire from "../assets/images/fire.svg";
+import image from "../assets/images/image.svg";
+import loveTooltip from "../assets/images/love-tooltip.svg";
+import magnifierV2 from "../assets/images/magnifier-v2.svg";
+import paint from "../assets/images/paint.svg";
+import pencil from "../assets/images/pencil.svg";
+import person from "../assets/images/person.svg";
+import rocketV2 from "../assets/images/rocket-v2.svg";
+import thumbsUp from "../assets/images/thumbs-up.svg";
+import thumbsDown from "../assets/images/thumbs-down.svg";
+import thunder from "../assets/images/thunder.svg";
+import trusted from "../assets/images/trusted.svg";
+import paintRoller from "../assets/images/paint-roller.svg";
+import lamp from "../assets/images/lamp.svg";
+import uxIdLogo from "../assets/images/uxid logo.png";
+import lakipadadaStudioLogo from "../assets/icons/logo lakipadada studio.png";
 
 export const Asset = {
   logo,
@@ -98,4 +119,25 @@ export const Asset = {
   saranatechLogo,
   trelloIcon,
   adobeXdIcon,
+  excelIcon,
+  aiIcon,
+  calculator,
+  calendar,
+  dart,
+  fire,
+  image,
+  loveTooltip,
+  magnifierV2,
+  paint,
+  pencil,
+  person,
+  rocketV2,
+  thumbsUp,
+  thumbsDown,
+  thunder,
+  trusted,
+  paintRoller,
+  lamp,
+  uxIdLogo,
+  lakipadadaStudioLogo,
 };

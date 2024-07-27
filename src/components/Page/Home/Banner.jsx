@@ -6,7 +6,10 @@ import { UserData } from "../../../helpers/links.js";
 export default function Banner() {
   return (
     <VantaBackground>
-      <div className="min-h-screen flex items-center justify-center flex-col">
+      <div
+        data-aos="fade-in"
+        className="min-h-screen flex items-center justify-center flex-col"
+      >
         <h1 className="text-7xl text-onsurface font-bold flex flex-col items-center justify-center gap-4">
           <span>Product Designer</span>
           <span>& UX Designer</span>

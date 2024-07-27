@@ -3,18 +3,23 @@ import { UserData } from "../../../helpers/links.js";
 
 export default function AboutMeBanner() {
   return (
-    <div className="px-5 bg-image-18 min-h-screen bg-cover bg-no-repeat bg-center flex items-center justify-center">
+    <div
+      data-aos="fade-in"
+      className="px-5 bg-image-18 min-h-screen bg-cover bg-no-repeat bg-center flex items-center justify-center"
+    >
       <div className="flex text-onsurface px-24 gap-20 justify-between">
         <div className="flex flex-col w-1/2 justify-evenly">
-          <h1 className="text-6xl font-bold inline-flex items-center">
-            Hi there!{" "}
-            <img
-              src={Asset.waveSign}
-              className="h-20 w-20 object-cover"
-              alt="Wave sign"
-            />
-          </h1>
-          <h1 className="text-6xl font-bold">{"I'm"} Alif</h1>
+          <div className="flex flex-col">
+            <h1 className="text-6xl font-bold inline-flex items-center">
+              Hi there!{" "}
+              <img
+                src={Asset.waveSign}
+                className="h-20 w-20 object-cover"
+                alt="Wave sign"
+              />
+            </h1>
+            <h1 className="text-6xl font-bold">{"I'm"} Alif Lakipadada</h1>
+          </div>
           <p className="text-justify">
             I’m a computer science bachelor. My passion has always been in
             digital technology & graphic design. As someone who has knowledges

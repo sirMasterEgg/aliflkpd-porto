@@ -4,7 +4,7 @@ import NavbarFuturistic from "../../Navbar/NavbarFuturistic.jsx";
 export default function Navbar() {
   return (
     <>
-      <div className="fixed w-full z-20 top-0">
+      <div className="fixed w-full z-20 top-0" data-aos="fade-in">
         <div className="relative pt-3 px-2">
           <div className="border-animation-wrapper nav-content">
             <div className="border-animation-inner">

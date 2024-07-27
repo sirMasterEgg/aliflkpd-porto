@@ -11,6 +11,7 @@ export default function ExperienceCrmCard({
 
   return (
     <div
+      data-aos="fade-left"
       className={`w-full p-[1px] rounded-xl relative bg-gradient-to-r from-[rgba(255,255,255,0.6)]`}
       onMouseOver={onEnter}
       onMouseOut={onLeave}
@@ -19,7 +20,7 @@ export default function ExperienceCrmCard({
         className={`${backgroundImage} h-full rounded-l-xl rounded-r-2xl ${backgroundPosition}`}
       >
         <div
-          className={`w-[calc(100% - 2px)] h-full rounded-xl bg-background text-onsurface flex flex-col gap-8 py-5 px-20 items-center justify-center transition ${transitionDuration} hover:bg-transparent`}
+          className={`w-[calc(100% - 2px)] h-full rounded-xl bg-background text-onsurface flex flex-col gap-8 py-20 px-20 items-center justify-center transition ${transitionDuration} hover:bg-transparent`}
         >
           <div className="relative flex items-center justify-center">
             <div className="relative">
@@ -59,12 +60,15 @@ export default function ExperienceCrmCard({
                   />
                   <img src={Asset.maze} title="Maze" alt="Icon maze" />
                 </span>
-                <a
-                  href="#"
+                {/*<a
+                  href={RouteList.experience.clientConnectCrm}
                   className="flex items-center justify-center border border-base-color rounded-full px-6 hover:bg-onsurface hover:text-background transition duration-300"
                 >
                   View More
-                </a>
+                </a>*/}
+                <span className="flex items-center cursor-default uppercase justify-center border border-base-color bg-icon-border text-onsurface rounded-full px-6">
+                  On Progress
+                </span>
               </div>
             </div>
           </div>

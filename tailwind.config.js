@@ -13,13 +13,20 @@ export default {
         content: "#95F9F9",
         onsurface: "#E5F2F2",
         "icon-border": "#2A3547",
+        bullet: "#3FD0FF",
         subtext: "rgba(147, 170, 170, 1)",
+        "border-input": "#E4E4E7",
+        "ring-input": "#A1A1AA",
+        "input-text": "#09090B",
       },
       fontFamily: {
         sans: ['"Buenos Aires"', ...defaultTheme.fontFamily.sans],
       },
       listStyleType: {
         circle: "circle",
+      },
+      aspectRatio: {
+        "9/20": "9 / 20",
       },
       backgroundImage: {
         "image-1": "url('/src/assets/backgrounds/image 1.svg')",

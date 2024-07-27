@@ -7,18 +7,20 @@ export default function NavbarFuturistic({ imageLogo }) {
   return (
     <nav className="flex justify-center">
       <ul className="flex items-center gap-3">
-        <a
-          href={RouteList.home}
-          className={`navbar-underline ${
-            location.pathname === RouteList.home
-              ? "navbar-underline-active"
-              : ""
-          }`}
-        >
-          <li>Home</li>
-        </a>
-        <span className="relative bg-background trapezoid h-[66px] w-[160px] flex items-center justify-center">
-          <img loading="lazy" className="h-1/2" src={imageLogo} alt="Logo" />
+        <li>
+          <a
+            href={RouteList.home}
+            className={`navbar-underline ${
+              location.pathname === RouteList.home
+                ? "navbar-underline-active"
+                : ""
+            }`}
+          >
+            Home
+          </a>
+        </li>
+        <li className="relative bg-background trapezoid h-[66px] w-[160px] flex items-center justify-center">
+          <img loading="eager" className="h-1/2" src={imageLogo} alt="Logo" />
           <svg
             className="absolute opacity-0 transition duration-500 hover:opacity-100 w-[258px] h-[66px] z-[2]"
             viewBox="0 0 260 66"
@@ -30,17 +32,19 @@ export default function NavbarFuturistic({ imageLogo }) {
               stroke="#9DFFFF"
             />
           </svg>
-        </span>
-        <a
-          href={RouteList.about}
-          className={`navbar-underline ${
-            location.pathname === RouteList.about
-              ? "navbar-underline-active"
-              : ""
-          }`}
-        >
-          <li>About Me</li>
-        </a>
+        </li>
+        <li>
+          <a
+            href={RouteList.about}
+            className={`navbar-underline ${
+              location.pathname === RouteList.about
+                ? "navbar-underline-active"
+                : ""
+            }`}
+          >
+            About Me
+          </a>
+        </li>
       </ul>
     </nav>
   );
