@@ -9,9 +9,6 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
-            if (id.includes("react")) {
-              return "vendor_react";
-            }
             if (id.includes("zustand")) {
               return "vendor_zustand";
             }
@@ -31,7 +28,7 @@ export default defineConfig({
               return "vendor_react_dom";
             }
 
-            return "vendor_" + id; // all other package goes here
+            return "vendor"; // all other package goes here
           }
         },
       },
