@@ -5,21 +5,28 @@ export default function AboutMeBanner() {
   return (
     <div
       data-aos="fade-in"
-      className="px-5 bg-image-18 min-h-screen bg-cover bg-no-repeat bg-center flex items-center justify-center"
+      className="px-10 lg:px-5 bg-image-18 min-h-screen bg-cover bg-no-repeat bg-center flex items-center justify-center"
     >
-      <div className="flex text-onsurface px-24 gap-20 justify-between">
-        <div className="flex flex-col w-1/2 justify-evenly">
+      <div className="flex flex-col pt-24 lg:flex-row text-onsurface lg:px-24 gap-5 lg:gap-20 justify-between">
+        <div className="flex flex-col gap-6 lg:gap-5 lg:w-1/2 justify-evenly">
           <div className="flex flex-col">
-            <h1 className="text-6xl font-bold inline-flex items-center">
+            <h1 className="text-3xl lg:text-6xl font-bold inline-flex items-center">
               Hi there!{" "}
               <img
                 src={Asset.waveSign}
-                className="h-20 w-20 object-cover"
+                className="w-10 h-10 lg:h-20 lg:w-20 object-cover"
                 alt="Wave sign"
               />
             </h1>
-            <h1 className="text-6xl font-bold">{"I'm"} Alif Lakipadada</h1>
+            <h1 className="text-3xl lg:text-6xl font-bold">
+              {"I'm"} Alif Lakipadada
+            </h1>
           </div>
+          <img
+            src={Asset.userPhoto}
+            className="lg:hidden w-40 mx-auto"
+            alt="Alif Photo"
+          />
           <p className="text-justify">
             I’m a computer science bachelor. My passion has always been in
             digital technology & graphic design. As someone who has knowledges
@@ -46,8 +53,12 @@ export default function AboutMeBanner() {
           </span>
         </div>
         <div className="flex flex-col gap-3 items-center">
-          <img src={Asset.userPhoto} alt="Alif Photo" />
-          <div className="button-lets-connect-border transition duration-1000 p-2 rounded-[25px] w-11/12">
+          <img
+            className="hidden lg:block"
+            src={Asset.userPhoto}
+            alt="Alif Photo"
+          />
+          <div className="button-lets-connect-border transition duration-1000 p-2 rounded-[25px] w-full lg:w-11/12">
             <a
               href={UserData.linksLinkedin}
               target="_blank"

@@ -1,5 +1,6 @@
 import { Asset } from "../../../helpers/AssetHelper.js";
 import NavbarFuturistic from "../../Navbar/NavbarFuturistic.jsx";
+import NavbarDrawer from "../../Navbar/NavbarDrawer.jsx";
 
 export default function Navbar() {
   return (
@@ -17,6 +18,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      <NavbarDrawer />
     </>
   );
 }

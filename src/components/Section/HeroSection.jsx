@@ -4,9 +4,13 @@ import PropTypes from "prop-types";
 export default function HeroSection({ title, heroBanner }) {
   return (
     <div className="flex flex-col text-onsurface w-full justify-between">
-      <div className="inline-flex justify-start items-center px-24 mb-5">
-        <h1 className="text-4xl font-bold">{title}</h1>
-        <img src={Asset.paint} className="w-20" alt="Icon palette and brush" />
+      <div className="inline-flex justify-start items-center px-10 lg:px-24 mb-5">
+        <h1 className="text-xl lg:text-4xl font-bold">{title}</h1>
+        <img
+          src={Asset.paint}
+          className="hidden lg:block w-20"
+          alt="Icon palette and brush"
+        />
       </div>
       <div className="w-full">
         <img src={heroBanner} className="w-full" alt="hero" />

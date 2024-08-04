@@ -10,8 +10,8 @@ export default function DetailsProjectSection({
   challenge,
 }) {
   return (
-    <div data-aos="fade-in" className="px-20 py-20 text-onsurface">
-      <div className="grid grid-cols-3 gap-10 my-5">
+    <div data-aos="fade-in" className="p-10 lg:p-20 text-onsurface">
+      <div className="flex flex-col lg:grid grid-cols-3 gap-10 my-5">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-4">
             <h2 className="text-xl font-bold">Role</h2>
@@ -49,7 +49,7 @@ export default function DetailsProjectSection({
                 <p className="text-justify">{overview}</p>
                 <img
                   src={Asset.pencil}
-                  className="w-20 h-20 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2"
+                  className="hidden lg:block w-20 h-20 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2"
                   alt="Pencil"
                 />
               </div>

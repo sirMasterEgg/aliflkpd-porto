@@ -15,7 +15,7 @@ export default function DesignDocumentationImage({
       {children}
       <div className="w-full h-full absolute transition duration-500 opacity-0 hover:opacity-100 top-0 left-0 rounded-2xl">
         <div className="relative h-full w-full">
-          <span className="text-onsurface text-xl font-bold absolute bottom-5 left-10">
+          <span className="text-onsurface text-sm lg:text-xl truncate max-w-full font-bold absolute bottom-1 left-2 lg:bottom-5 lg:left-10">
             {description}
           </span>
         </div>

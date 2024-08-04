@@ -10,11 +10,11 @@ export default function Banner() {
         data-aos="fade-in"
         className="min-h-screen flex items-center justify-center flex-col"
       >
-        <h1 className="text-7xl text-onsurface font-bold flex flex-col items-center justify-center gap-4">
+        <h1 className="text-4xl lg:text-7xl text-onsurface font-bold flex flex-col items-center justify-center gap-4">
           <span>Product Designer</span>
           <span>& UX Designer</span>
         </h1>
-        <h2 className="text-onsurface text-3xl mt-4 font-light flex flex-col items-center justify-center gap-2">
+        <h2 className="text-onsurface lg:text-3xl mt-4 font-light flex flex-col items-center justify-center gap-2">
           <span>“a Product is succeed if it’s equal for </span>
           <span>everyone”</span>
         </h2>

@@ -23,7 +23,9 @@ export default function WorkingToolsCard() {
                       alt={`Icon ${tool.name}`}
                     />
                   </div>
-                  <span>{tool.name}</span>
+                  <span className="text-center text-xs lg:text-base">
+                    {tool.name}
+                  </span>
                 </div>
               </Fragment>
             ))}

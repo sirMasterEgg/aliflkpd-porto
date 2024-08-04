@@ -118,18 +118,25 @@ export default function ContactInfoCard() {
           <div
             className={`w-[calc(100% - 2px)] min-h-[400px] h-full rounded-xl bg-background text-onsurface flex gap-5 p-10 flex-col items-center justify-center transition ${transitionDuration} hover:bg-transparent`}
           >
-            <div className="flex flex-row w-full px-10">
-              <div className="flex flex-col gap-3 flex-1 justify-center">
-                <span className="text-4xl font-semibold">
+            <div className="flex flex-row w-full lg:px-10">
+              <div className="flex flex-col gap-1 lg:gap-3 flex-1 justify-center">
+                <span className="text-xl lg:text-4xl font-semibold">
                   Looking to collaborate or find out more?
                 </span>
-                <span className="text-4xl text-content font-semibold">
+                <span className="text-xl lg:text-4xl text-content font-semibold">
                   Let’s get in touch!
                 </span>
               </div>
+              <div className="lg:hidden w-20 flex justify-center items-center">
+                <img
+                  src={Asset.persona}
+                  className="w-[250px]"
+                  alt="Alif persona"
+                />
+              </div>
             </div>
-            <div className="flex flex-row w-full px-10 gap-10">
-              <div className="w-1/3 flex justify-center items-center">
+            <div className="flex flex-row w-full lg:px-10 gap-10">
+              <div className="hidden w-1/3 lg:flex justify-center items-center">
                 <img
                   src={Asset.persona}
                   className="w-[250px]"
@@ -139,7 +146,7 @@ export default function ContactInfoCard() {
               <form
                 ref={formRef}
                 onSubmit={formSubmit}
-                className="flex-1 flex flex-col gap-2"
+                className="flex-1 flex flex-col gap-5"
               >
                 <label>
                   Full Name

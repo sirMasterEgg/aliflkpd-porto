@@ -7,12 +7,12 @@ export default function ResultSection({
   rightPoints,
 }) {
   return (
-    <div className="grid grid-cols-2 text-onsurface">
+    <div className="flex flex-col lg:grid grid-cols-2 text-onsurface">
       <div
         data-aos="fade-right"
-        className="flex flex-col bg-[#283232] p-20 gap-5"
+        className="flex flex-col bg-[#283232] p-10 lg:p-20 gap-5"
       >
-        <h1 className="text-4xl">{leftTitle}</h1>
+        <h1 className="text-xl font-bold lg:text-4xl">{leftTitle}</h1>
         <ul className="dashed-2">
           {leftPoints.map((point, index) => (
             <li key={index + "-" + point}>{point}</li>
@@ -21,9 +21,9 @@ export default function ResultSection({
       </div>
       <div
         data-aos="fade-left"
-        className="flex flex-col bg-[#2A3547] p-20 gap-5"
+        className="flex flex-col bg-[#2A3547] p-10 lg:p-20 gap-5"
       >
-        <h1 className="text-4xl">{rightTitle}</h1>
+        <h1 className="text-xl font-bold lg:text-4xl">{rightTitle}</h1>
         <ul className="dashed-2">
           {rightPoints.map((point, index) => (
             <li key={index + "-" + point}>{point}</li>

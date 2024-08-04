@@ -27,7 +27,7 @@ export default function GradientCard({
       onMouseOut={onLeave}
     >
       <div
-        className={`${backgroundImage} h-full rounded-l-xl rounded-r-2xl ${backgroundPosition}`}
+        className={`${backgroundImage} h-full rounded-l-xl rounded-r-2xl bg-cover lg:bg-auto ${backgroundPosition}`}
       >
         <div
           className={`w-[calc(100% - 2px)] h-full rounded-xl bg-background text-onsurface flex gap-5 flex-col transition ${transitionDuration} hover:bg-transparent ${

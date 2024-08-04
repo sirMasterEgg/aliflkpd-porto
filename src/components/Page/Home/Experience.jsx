@@ -12,7 +12,7 @@ export default function Experience() {
       >
         ✦ STUDY CASES ✦
       </h3>
-      <div className="grid grid-cols-2 gap-5 my-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-5">
         <ExperienceKallaCard backgroundImage="bg-image-10" />
         <ExperienceUndiknasCard backgroundImage="bg-image-3" />
         <ExperienceRealAndFakeCard

@@ -44,8 +44,8 @@ export default function ServiceCard({
               alt={altText}
             />
           </div>
-          <h1 className="text-4xl font-bold">{title}</h1>
-          <p className="text-justify text-xl">{description}</p>
+          <h1 className="text-4xl font-bold text-center">{title}</h1>
+          <p className="text-left text-xl">{description}</p>
         </div>
       </div>
     </div>

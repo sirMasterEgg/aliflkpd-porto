@@ -3,14 +3,14 @@ import { Asset } from "../../../helpers/AssetHelper.js";
 
 export default function Service() {
   return (
-    <div className="px-5">
+    <div className="py-3 lg:py-0 px-5">
       <h3
         data-aos="fade-up"
         className="text-onsurface border border-base-color bg-background rounded-xl text-center font-bold text-xl py-4 w-full "
       >
         ✦ SERVICES ✦
       </h3>
-      <div className="grid grid-cols-2 gap-5 my-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-5">
         <ServiceCard
           dataAos="fade-right"
           title="Exploration"

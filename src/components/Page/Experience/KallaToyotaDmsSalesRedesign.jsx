@@ -61,7 +61,7 @@ export default function KallaToyotaDmsSalesRedesign() {
           challenge="There were several challenge on the project, those were ; to create a data list view without using table for easier access through smartphone, reduce the required input data for leads, prospects, and SPK while still keeping the most important data for the business purpose."
         />
         <DesignProcessSection>
-          <div className="grid grid-cols-5 w-full gap-5">
+          <div className="flex flex-col lg:grid grid-cols-5 w-full gap-10 lg:gap-5">
             <div className="flex flex-col">
               <span className="blue-bullet">Discover</span>
               <ul className="dotted-outside pl-4">
@@ -119,7 +119,7 @@ export default function KallaToyotaDmsSalesRedesign() {
               />
               <img
                 src={Asset.calculator}
-                className="absolute bottom-0 left-0 scale-x-[-1] -translate-x-2/3 translate-y-1/2 w-32"
+                className="absolute bottom-0 left-0 scale-x-[-1] -translate-x-1/2 translate-y-1/2 w-32"
                 alt="calculator icon"
               />
             </div>
@@ -325,7 +325,7 @@ export default function KallaToyotaDmsSalesRedesign() {
             },
           ]}
         />
-        <div className="p-20 flex flex-col gap-5 bg-background">
+        <div className="p-10 lg:p-20 flex flex-col gap-5 bg-background">
           <h1 className="text-content text-3xl font-bold">
             Design Documentation
           </h1>
@@ -340,7 +340,7 @@ export default function KallaToyotaDmsSalesRedesign() {
           >
             <img
               src={Asset.thumbsDown}
-              className="w-32 absolute right-0 top-0 -translate-y-1/2 translate-x-1/2"
+              className="w-16 lg:w-32 absolute right-0 top-0 -translate-y-1/2 translate-x-1/2"
               alt="thumbs down icon"
             />
           </DesignDocumentationImage>
@@ -351,7 +351,7 @@ export default function KallaToyotaDmsSalesRedesign() {
           >
             <img
               src={Asset.thumbsUp}
-              className="w-32 absolute left-0 top-0 -translate-y-1/2 -translate-x-1/2"
+              className="w-16 lg:w-32 absolute left-0 top-0 -translate-y-1/2 -translate-x-1/2"
               alt="thumbs down icon"
             />
           </DesignDocumentationImage>

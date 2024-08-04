@@ -49,7 +49,7 @@ export default function RealNFake() {
           challenge="The challenge i went through on this project was having to manage the whole development team and it’s process as my first experience for being both a Project Manager and Product Designer. I had to manage the project plan, budget, risk, project standards, and tools, while also doing research and designing the product."
         />
         <DesignProcessSection>
-          <div className="grid grid-cols-5 w-full gap-5">
+          <div className="flex flex-col gap-10 lg:grid grid-cols-5 w-full lg:gap-5">
             <div className="flex flex-col">
               <span className="blue-bullet">Discover</span>
               <ul className="dotted-outside pl-4">
@@ -284,10 +284,20 @@ export default function RealNFake() {
             },
           ]}
         />
-        <div className="p-20 flex flex-col gap-5 bg-background">
+        <div className="p-10 lg:p-20 flex flex-col gap-5 bg-background">
           <h1 className="text-content text-3xl font-bold">
             Design Documentation
           </h1>
+          <span className="text-onsurface inline-flex flex-col">
+            The web is already live but are currently on testing
+            <a
+              href="https://www.realnfake.co"
+              target="_blank"
+              className="text-content after:bg-content underline-animation w-fit"
+            >
+              https://www.realnfake.co
+            </a>
+          </span>
           <DesignDocumentationImage
             image={AssetExperience.realNFake.DocumentationThriftex1}
             description="Client Interface"
@@ -295,7 +305,7 @@ export default function RealNFake() {
           >
             <img
               src={Asset.thumbsUp}
-              className="w-32 absolute left-0 top-0 -translate-y-1/2 -translate-x-1/2"
+              className="w-16 lg:w-32 absolute left-0 top-0 -translate-y-1/2 -translate-x-1/2"
               alt="thumbs down icon"
             />
           </DesignDocumentationImage>

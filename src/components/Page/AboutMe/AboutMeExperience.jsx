@@ -13,7 +13,7 @@ export default function AboutMeExperience() {
 
   return (
     <div className="px-5">
-      <div className="grid grid-cols-3 text-onsurface px-24 my-5 gap-16">
+      <div className="flex flex-col lg:grid grid-cols-3 text-onsurface px-5 lg:px-24 my-5 gap-5 lg:gap-16">
         <div className="flex flex-col col-span-2">
           <div className="flex flex-col gap-5">
             <h2 className="text-xl font-bold">Working Experience</h2>

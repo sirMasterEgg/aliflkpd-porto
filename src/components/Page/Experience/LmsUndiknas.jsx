@@ -61,9 +61,9 @@ export default function LmsUndiknas() {
           challenge="The main challenge of the project was how to build an equal experiences with so many users characteristic between 2 end user category that is Students and Lecturers. For this project, i used Double Diamond method for an iterative process to solve problems based on priority scale."
         />
         <DesignProcessSection title="Double Diamond Design Process">
-          <div className="grid grid-cols-3">
-            <div className="order-1 relative">
-              <span className="absolute top-0 left-0 text-2xl font-bold -translate-x-1/2 -translate-y-1/2">
+          <div className="flex flex-col lg:grid grid-cols-3">
+            <div className="lg:order-1 relative">
+              <span className="absolute top-0 lg:left-0 left-3 lg:text-2xl font-bold -translate-x-1/2 -translate-y-1/2">
                 1ST Cycle
               </span>
               <table className="w-full h-full table-fixed border border-base-color">
@@ -97,12 +97,19 @@ export default function LmsUndiknas() {
                 </tbody>
               </table>
             </div>
-            <div className="order-2">
-              <div className="inline-flex items-center justify-center h-full w-full">
+            <div className="lg:order-2">
+              <div className="hidden lg:inline-flex items-center justify-center h-full w-full">
                 <img src={AssetExperience.lmsUndiknas.arrow} alt="arrow" />
               </div>
+              <div className="lg:hidden w-full h-full inline-flex items-center justify-center p-5">
+                <img
+                  src={AssetExperience.lmsUndiknas.arrowVertical}
+                  className=""
+                  alt="arrow"
+                />
+              </div>
             </div>
-            <div className="order-3">
+            <div className="lg:order-3">
               <table className="w-full h-full table-fixed border border-base-color">
                 <thead>
                   <tr>
@@ -132,7 +139,7 @@ export default function LmsUndiknas() {
                 </tbody>
               </table>
             </div>
-            <div className="order-4 col-span-3 col-end-6">
+            <div className="lg:order-4 col-span-3 col-end-6">
               <div className="w-full h-full inline-flex items-center justify-center p-5">
                 <img
                   src={AssetExperience.lmsUndiknas.arrowVertical}
@@ -141,8 +148,8 @@ export default function LmsUndiknas() {
                 />
               </div>
             </div>
-            <div className="order-7 relative">
-              <span className="absolute top-0 right-0 text-2xl font-bold translate-x-1/4 -translate-y-1/2">
+            <div className="lg:order-7 relative">
+              <span className="absolute top-0 right-0 lg:text-2xl font-bold translate-x-1/4 -translate-y-1/2">
                 2ND Cycle
               </span>
               <table className="w-full h-full table-fixed border border-base-color">
@@ -174,16 +181,23 @@ export default function LmsUndiknas() {
                 </tbody>
               </table>
             </div>
-            <div className="order-6">
-              <div className="w-full h-full inline-flex items-center justify-center">
+            <div className="lg:order-6">
+              <div className="hidden w-full h-full lg:inline-flex items-center justify-center">
                 <img
                   src={AssetExperience.lmsUndiknas.arrow}
                   className="rotate-180"
                   alt="arrow"
                 />
               </div>
+              <div className="lg:hidden w-full h-full inline-flex items-center justify-center p-5">
+                <img
+                  src={AssetExperience.lmsUndiknas.arrowVertical}
+                  className=""
+                  alt="arrow"
+                />
+              </div>
             </div>
-            <div className="order-5">
+            <div className="lg:order-5">
               <table className="w-full h-full table-fixed border border-base-color order-1">
                 <thead>
                   <tr>
@@ -500,7 +514,7 @@ export default function LmsUndiknas() {
             },
           ]}
         />
-        <div className="p-20 flex flex-col gap-5 bg-background">
+        <div className="p-10 lg:p-20 flex flex-col gap-5 bg-background">
           <h1 className="text-content text-3xl font-bold">
             Design Documentation
           </h1>
@@ -522,7 +536,7 @@ export default function LmsUndiknas() {
           >
             <img
               src={Asset.thumbsUp}
-              className="w-32 absolute left-0 top-0 -translate-y-1/2 -translate-x-1/2"
+              className="w-16 lg:w-32 absolute left-0 top-0 -translate-y-1/2 -translate-x-1/2"
               alt="thumbs down icon"
             />
           </DesignDocumentationImage>

@@ -17,10 +17,10 @@ export default function ExperienceCrmCard({
       onMouseOut={onLeave}
     >
       <div
-        className={`${backgroundImage} h-full rounded-l-xl rounded-r-2xl ${backgroundPosition}`}
+        className={`${backgroundImage} h-full rounded-l-xl rounded-r-2xl bg-cover lg:bg-auto ${backgroundPosition}`}
       >
         <div
-          className={`w-[calc(100% - 2px)] h-full rounded-xl bg-background text-onsurface flex flex-col gap-8 py-20 px-20 items-center justify-center transition ${transitionDuration} hover:bg-transparent`}
+          className={`w-[calc(100% - 2px)] h-full rounded-xl bg-background text-onsurface flex flex-col gap-3 p-10 lg:gap-8 lg:py-20 lg:px-20 items-center justify-center transition ${transitionDuration} hover:bg-transparent`}
         >
           <div className="relative flex items-center justify-center">
             <div className="relative">
@@ -31,7 +31,7 @@ export default function ExperienceCrmCard({
               />
               <img
                 src={Asset.clientConnectCrmMobile}
-                className="w-[120px] absolute top-2 -right-5"
+                className="w-4/12 lg:w-[120px] scale-95 lg:scale-100 absolute top-1 lg:top-2 -right-5"
                 alt="Experience CRM Mobile"
               />
             </div>
@@ -40,7 +40,7 @@ export default function ExperienceCrmCard({
             <h1 className="text-3xl font-bold mb-2">
               CLIENT CONNECT CRM DESIGN
             </h1>
-            <p className="text-xl text-justify">
+            <p className="text-xl text-left">
               The project goal was to enhance customer engagement and streamline
               sales and customer service processes for businesses. The app
               focuses on managing customer information, tracking sales leads,
@@ -50,8 +50,8 @@ export default function ExperienceCrmCard({
             </p>
             <div className="flex gap-5 flex-col">
               <span className="font-bold text-xl">Tools Used</span>
-              <div className="flex justify-between h-full">
-                <span className="inline-flex gap-3">
+              <div className="flex justify-between items-end lg:items-start h-full">
+                <span className="lg:w-auto flex-wrap inline-flex gap-3">
                   <img src={Asset.figma} title="Figma" alt="Icon figma" />
                   <img
                     src={Asset.ai}
@@ -66,7 +66,7 @@ export default function ExperienceCrmCard({
                 >
                   View More
                 </a>*/}
-                <span className="flex items-center cursor-default uppercase justify-center border border-base-color bg-icon-border text-onsurface rounded-full px-6">
+                <span className="w-2/3 lg:w-auto h-fit text-center py-1 flex items-center cursor-default uppercase justify-center border border-base-color bg-icon-border text-onsurface rounded-full px-6">
                   On Progress
                 </span>
               </div>

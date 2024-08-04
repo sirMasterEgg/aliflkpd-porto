@@ -20,7 +20,7 @@ const studyCaseFooter = [
 export default function Footer() {
   return (
     <footer className="w-full text-onsurface bg-background">
-      <div className="grid grid-cols-4 min-h-60 p-10 pb-32">
+      <div className="flex flex-col gap-10 lg:gap-0 lg:grid grid-cols-4 min-h-60 p-10 pb-32">
         <img
           loading="lazy"
           src={Asset.logoPng}

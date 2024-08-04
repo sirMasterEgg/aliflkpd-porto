@@ -5,7 +5,7 @@ export default function ConclusionSection({ details, conclusionPoints }) {
   return (
     <div
       data-aos="fade-up"
-      className="relative p-20 text-onsurface flex flex-col gap-5"
+      className="relative p-10 lg:p-20 text-onsurface flex flex-col gap-5"
     >
       <img
         src={Asset.thunder}
@@ -14,7 +14,7 @@ export default function ConclusionSection({ details, conclusionPoints }) {
       />
       <h1 className="text-content text-3xl font-bold">Conclusion</h1>
       <span>{details}</span>
-      <div className="grid grid-cols-2 gap-10 mt-5">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-5">
         {conclusionPoints.map((points, index) => (
           <div className="flex flex-col gap-1" key={points.title + "-" + index}>
             <h2 className="font-bold text-xl">{points.title}</h2>
