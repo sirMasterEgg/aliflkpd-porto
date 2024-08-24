@@ -28,27 +28,40 @@ export default function AboutMeBanner() {
             alt="Alif Photo"
           />
           <p className="text-justify">
-            I’m a computer science bachelor. My passion has always been in
-            digital technology & graphic design. As someone who has knowledges
-            with programming, graphics & analyst skill, i decided to be a
-            Product Designer and UX Designer.
+            With around 2 years experience in graphic design and rich knowledges
+            in programming and analyzing skill, i choose to focus on UX Design
+            and Product Design. I have successfully designed and redesigned
+            several web and applications like Landing Pages, e-Commerce, Dealer
+            Management System, Construction Management System, Learning
+            Management System, and many more.
           </p>
           <p className="text-justify">
-            While on my road in building my career, i have also created my own
-            Digital Agency that is build with the best team. We have helped
+            While on my road in building my career, i also started my own
+            Digital Agency that is built with high skilled team. We have helped
             several company and individual to elevate their business through
-            technology digital product that not only does it have the best
-            quality but also came along with an equal experiences for everyone
-            that is using the product.
+            digital product that not only does it have a good quality but also
+            came along with an intuitive and equal user experiences for
+            everyone. I’m also currently building a Community in Bali for those
+            who are enthusiast with UI/UX, Product Design, and Technology.
           </p>
-          <span className="inline-flex gap-3">
+          <span className="inline-flex gap-3 mt-3">
             <img src={Asset.downloadIcon} alt="Icon download" />
             <a
               href={UserData.linksCv}
               target="_blank"
-              className="underline-animation"
+              className="underline-animation hovered"
             >
               Download My CV
+            </a>
+          </span>
+          <span className="inline-flex gap-3 mt-3">
+            <img src={Asset.joinGroupIcon} alt="Icon join UXiD Bali" />
+            <a
+              href={UserData.linksUIUXId}
+              target="_blank"
+              className="underline-animation"
+            >
+              Join me in UXiD Bali
             </a>
           </span>
         </div>

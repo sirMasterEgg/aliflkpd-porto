@@ -48,13 +48,13 @@ export default function NavbarFuturistic({ imageLogo }) {
         </li>
       </ul>
       <ul className="lg:hidden flex flex-row justify-between w-full">
+        <li className="max-h-[36px]">
+          <DrawerButton />
+        </li>
         <li className="h-[36px]">
           <a href={RouteList.home}>
             <img loading="eager" src={imageLogo} alt="Logo" />
           </a>
-        </li>
-        <li className="max-h-[36px]">
-          <DrawerButton />
         </li>
       </ul>
     </nav>

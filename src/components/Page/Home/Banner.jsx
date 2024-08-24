@@ -15,29 +15,35 @@ export default function Banner() {
           <span>& UX Designer</span>
         </h1>
         <h2 className="text-onsurface lg:text-3xl mt-4 font-light flex flex-col items-center justify-center gap-2">
-          <span>“a Product is succeed if it’s equal for </span>
-          <span>everyone”</span>
+          <span>“Design isn’t only how it looks like. Design</span>
+          <span>is how it works.”</span>
         </h2>
 
         <div className="flex items-center justify-center gap-2 mt-4">
           <IconButton
-            link={UserData.linksInstagram}
-            icon={Asset.instagramSolidIcon}
-            hoveredIcon={Asset.instagramIcon}
-            altText="Logo Instagram"
+            link={UserData.linksLinkedin}
+            icon={Asset.linkedinSolidIcon}
+            hoveredIcon={Asset.linkedinIcon}
+            altText="Logo LinkedIn"
           />
           <IconButton
             link={UserData.linksDribbl}
             icon={Asset.dribbblSolidIcon}
             hoveredIcon={Asset.dribbblIcon}
             altText="Logo Dribbbl"
+            className="cursor-icon"
           />
           <IconButton
-            link={UserData.linksLinkedin}
-            icon={Asset.linkedinSolidIcon}
-            hoveredIcon={Asset.linkedinIcon}
-            altText="Logo LinkedIn"
-            className="cursor-icon"
+            link={UserData.linksBehance}
+            icon={Asset.behanceSolidIcon}
+            hoveredIcon={Asset.behanceIcon}
+            altText="Logo Behance"
+          />
+          <IconButton
+            link={UserData.linksInstagram}
+            icon={Asset.instagramSolidIcon}
+            hoveredIcon={Asset.instagramIcon}
+            altText="Logo Instagram"
           />
         </div>
       </div>

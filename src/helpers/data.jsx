@@ -55,7 +55,7 @@ export const workData = [
         />
       </>
     ),
-    title: "Founder - Product Designer",
+    title: "Founder - Product Designer Lead",
     company: "Elkipidi Studio Lab",
     time: "Oct 2023 - Present",
     description: [
@@ -137,6 +137,24 @@ export const workData = [
       "Designed new design concept, mock-up, and prototypes,",
       "Conducted concept testing to test out users understanding on the new design concept,",
       "Conducted usability testing to test out the latest prototype's usability and user experience improvements.",
+    ],
+  },
+  {
+    logo: (
+      <>
+        <img
+          src={Asset.twoDGraphicDesignLogo}
+          className="w-20"
+          alt="Logo 2D Graphic Design"
+        />
+      </>
+    ),
+    title: "2D Graphic Design",
+    company: "UNIXMAD",
+    time: "Oct 2020 - January 2023",
+    description: [
+      "Designed 2D (Pixelated) graphics content such as weapons, characters, items, buildings, cars, etc for one of their 2D Game, “Graal Online Era”.",
+      "Collaborated with animation designer and developer to apply the designed graphic into the game.",
     ],
   },
 ];

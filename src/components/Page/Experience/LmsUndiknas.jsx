@@ -552,8 +552,8 @@ export default function LmsUndiknas() {
           />
           <DesignDocumentationImage
             image={AssetExperience.lmsUndiknas.DocumentationUndiknas4}
-            description="Design System"
-            altImage="Design system"
+            description="Visual Elements"
+            altImage="Visual Elements"
           />
         </div>
         <ScrollNotification />

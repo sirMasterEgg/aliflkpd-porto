@@ -15,8 +15,8 @@ export default function Home() {
         <Navbar />
         <Banner />
         <ScrollNotification />
-        <Service />
         <Experience />
+        <Service />
         <Contact />
         <Footer />
       </div>

@@ -2,13 +2,16 @@ import { useDrawer } from "../../hooks/useDrawer.js";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { RouteList } from "../../routes/route-list.js";
+import { useSwipes } from "../../hooks/useSwipes.js";
 
 export default function NavbarDrawer() {
-  const { isOpen, close } = useDrawer();
+  const { isOpen, close, open } = useDrawer();
   const anim1Ref = useRef(null);
   const anim2Ref = useRef(null);
   const anim3Ref = useRef(null);
   const location = useLocation();
+
+  const { distance, isSwipedRight, isSwipedLeft } = useSwipes();
 
   useEffect(() => {
     anim1Ref.current.beginElement();
@@ -16,11 +19,20 @@ export default function NavbarDrawer() {
     anim3Ref.current.beginElement();
   }, [isOpen]);
 
+  useEffect(() => {
+    if (distance > 50 && isSwipedRight) {
+      open();
+    }
+    if (distance > 50 && isSwipedLeft) {
+      close();
+    }
+  }, [distance]);
+
   return (
     <div
       className={`${
-        isOpen ? "translate-x-0" : "translate-x-full"
-      } fixed transition duration-500 top-0 right-0 w-9/12 h-screen z-50 bg-base-background p-5 pt-7 flex flex-col text-onsurface`}
+        isOpen ? "translate-x-0" : "-translate-x-full"
+      } fixed transition duration-500 top-0 left-0 w-9/12 h-screen z-50 bg-base-background p-5 pt-7 flex flex-col text-onsurface`}
     >
       <div className="inline-flex justify-end">
         <button onClick={close} className="text-onsurface w-fit">

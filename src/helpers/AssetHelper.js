@@ -6,6 +6,8 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import dribbblSolidIcon from "../assets/icons/dribbl-solid.svg";
 import instagramSolidIcon from "../assets/icons/instagram-solid.svg";
 import linkedinSolidIcon from "../assets/icons/linkedin-solid.svg";
+import behanceSolidIcon from "../assets/icons/behanceIconSolid.svg";
+import behanceIcon from "../assets/icons/behanceIcon.svg";
 import serviceMagnifier from "../assets/images/magnifier.svg";
 import serviceMagnifierSolid from "../assets/images/magnifier-solid.svg";
 import serviceFolder from "../assets/images/folder.svg";
@@ -33,9 +35,11 @@ import locationIcon from "../assets/icons/location.svg";
 import mailIcon from "../assets/icons/mail.svg";
 import starsIcon from "../assets/icons/stars.svg";
 import downloadIcon from "../assets/icons/download.svg";
+import joinGroupIcon from "../assets/icons/join-group.svg";
 import userPhoto from "../assets/images/user-photo.svg";
 import waveSign from "../assets/icons/wave.svg";
 import undiknasLogo from "../assets/images/logo-undiknas.svg";
+import twoDGraphicDesignLogo from "../assets/images/twoDGraphicDesignLogo.svg";
 import googleLogo from "../assets/icons/google-logo.svg";
 import kominfoLogo from "../assets/icons/kominfo-logo.svg";
 import kallaLogo from "../assets/icons/kalla-logo.svg";
@@ -140,4 +144,8 @@ export const Asset = {
   lamp,
   uxIdLogo,
   lakipadadaStudioLogo,
+  twoDGraphicDesignLogo,
+  behanceSolidIcon,
+  behanceIcon,
+  joinGroupIcon,
 };

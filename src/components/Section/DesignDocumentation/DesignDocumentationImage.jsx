@@ -11,7 +11,11 @@ export default function DesignDocumentationImage({
       data-aos="fade-up"
       className="relative rounded-2xl inner-shadow-bottom mt-12"
     >
-      <img src={image} className="rounded-2xl w-full" alt={altImage} />
+      <img
+        src={image}
+        className="rounded-2xl w-full max-h-[339px] object-cover object-top"
+        alt={altImage}
+      />
       {children}
       <div className="w-full h-full absolute transition duration-500 opacity-0 hover:opacity-100 top-0 left-0 rounded-2xl">
         <div className="relative h-full w-full">

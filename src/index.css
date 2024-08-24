@@ -121,7 +121,7 @@
         transition: opacity 500ms;
     }
 
-    .underline-animation:hover::after {
+    .underline-animation:hover::after, .underline-animation.hovered::after {
         opacity: 1;
     }
 
