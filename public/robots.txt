@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Allow: /about
+
+User-agent: *
+Allow: /experience/*
